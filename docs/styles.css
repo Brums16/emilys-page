@@ -1,0 +1,184 @@
+
+body {
+    background-color: whitesmoke;
+    font-family: arial;
+    color: #333333;
+    font-size: 16px
+}
+
+
+header {
+    color: steelblue;
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    position: absolute;
+    color: steelblue;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%
+}
+
+.link {
+    color: steelblue;
+    font-weight: bold;
+}
+
+.introduction {
+    justify-content: center;
+}
+
+img {
+    height:270px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+main {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: center;
+    text-align: center;
+    margin: auto
+}
+
+.pic-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.current{
+    margin: auto;
+    align-items: center;
+}
+
+.main-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+#hobbies-button {
+    visibility: hidden;
+}
+
+#hobbies-content {
+    visibility: hidden;
+    padding-left: 180px;
+    padding-right: 100px; 
+}
+
+#likesdislikes-button {
+    visibility: hidden;
+}
+
+#likesdislikes-content {
+    visibility: hidden; 
+    padding-left: 100px;
+    padding-right: 200px; 
+}
+
+#likesdislikes-table {
+    margin: auto
+}
+
+h3 {
+    margin-top: 10px
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #333333;
+    color: whitesmoke
+}
+
+.centered-list {
+    text-align: left;
+    list-style-position: inside;
+}
+
+button {
+    color: whitesmoke;
+    background-color: #333333;
+    border-radius: 10%;
+    height: 30px;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;
+    color: gray
+}
+
+#ball-game-button {
+    background-color: royalblue;
+    border-radius: 10%;
+    height: 30px;
+    margin-left: 30px;
+    width: 50%
+}
+
+#ball-game-button:hover {
+    color: darkblue
+}
+
+#park-button {
+    background-color: darkgreen;
+    height: 30px;
+    width: 50%;
+    border-radius: 10%;
+}
+
+#park-button:hover {
+    color: olivedrab
+}
+
+table {
+    border: 2px solid #333333
+}
+
+
+
+th, td {
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #333333
+}
+
+th {
+    background-color: #333333;
+    color: whitesmoke
+}
+
+a {
+    color: inherit
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+} 
+
+#awake {
+    font-weight: bold;
+}
+

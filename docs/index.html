@@ -1,0 +1,225 @@
+
+
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial scale=1">
+<html lang="en">
+    <head>
+       
+        <link href="styles.css" rel="stylesheet">
+        <title>Emily's Homepage</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <header>
+          
+        </header>
+        <main>
+            <h1>Emily's Homepage</h1>           
+             <div class="introduction">
+            <p id="introduction-para">My name is Emily and this is my homepage.  I'm asleep right now, you'll need to wake me up if you want to know more... </p>
+                
+                 
+                
+            </div>
+            <div class="pic">
+                <div class="pic-grid">
+                <img src="https://i.imgur.com/jluEXif.jpg" id="main-pic">
+                <button id="awake-asleep">Wake up</button>
+                </div>
+  <!--              <button id="go-to-sleep">Go back to sleep</button>  -->
+            </div>
+
+            <div class="current">
+                <p id="awake"></p>
+             </div> 
+             <div class="main-content">
+                 <div id="hobbies-div">
+                    <button id="hobbies-button">Hobbies</button>  
+                    <div id="hobbies-content">
+                   
+                    <h4>Ball Game</h4>
+                    <div class="hobbies-grid">
+                <p>I used to play ball game all day long, sprinting about.  
+                    <br />
+                    Now I'm old I just find the ball, that's the game...</p>
+                <button id="ball-game-button" >Play Ball!</button>
+                <br />
+                <br />
+
+                
+            </div>
+            
+                <h4>Park Patrol</h4>
+
+                <p>Some text about the nightly park patrol. 
+                    An unordered list of things I've seen: </p>
+                <div class="hobbies-grid">
+                    <ul>
+                        <li>Bats</li>
+                        <li>Swans</li>
+                        <li>Other dogs</li>
+                        <li>Ducks</li>
+                        <li>Humans</li>
+                    </ul> 
+                    <button id="park-button">To the park</button>
+                </div>
+                <p><a href="https://gedlingcountrypark.com/" id="park-link"></a></p>
+                </div>
+                </div>
+                <div id="likesdislikes-content">
+                    <button class="likesdislikes-button" id="likesdislikes-button">Likes/Dislikes</button> 
+                    <h4>Favourite places</h4>
+                    
+                <p>Here is an ordered list of my favourite places:</p>
+                <ol class="centered-list" id="favourite-places">
+                    <li>The bed</li>
+                    <li>My chair (upstairs)</li>
+                    <li>My chair (downstairs)</li>
+                    <li>My favourite <a href="https://gedlingcountrypark.com/" target="_blank">park</a></li>
+
+
+                </ol>
+               
+                <h4>Likes and Dislikes</h4>
+                    
+                    <div id="likesdislikes-table-div">
+                 
+                        <table id="likesdislikes-table">
+                    <tr>
+                        <th>Likes</th>
+                        <th>Dislikes</th>
+                    </tr>
+                    <tr>
+                        <td>Chris</td>
+                        <td>Big dogs</td>
+                    </tr>
+                    <tr>
+                        <td>Lori</td>
+                        <td>Water</td>
+                    </tr>
+                    <tr>
+                        <td>Ball</td>
+                        <td>Cats</td>
+                    </tr>
+                    <tr>
+                        <td>Bed</td>
+                        <td>Small dogs</td>
+                    </tr>
+                    <tr>
+                        <td>Pineapple</td>
+                        <td>Noises</td>
+                    </tr>
+                        </table> 
+
+
+                    </div>
+                    
+                </div>
+                
+   
+             </div>
+
+            
+                    
+        </main>
+        <footer>
+            <p>If you'd like to rescue a dog as pretty as me click <a href="https://www.jerrygreendogs.org.uk/" target="_blank">here</a></p>
+            <p>You can find more of Chris's pages on &nbsp<a href="https://github.com/Brums16" target="_blank"><span class="link">GitHub</span></a></p>
+        </footer>
+    </body>
+    
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            let awakeStatus = false
+            let leadStatus = false
+            const awakeAsleepButton = document.querySelector('#awake-asleep')
+            const mainPic = document.querySelector('#main-pic')
+            const introParagraph = document.querySelector('#introduction-para')
+            const awakeAsleepParagraph = document.querySelector('#awake')
+            const hobbiesContent = document.querySelector('#hobbies-content') 
+            const likesDislikesContent = document.querySelector('#likesdislikes-content')
+            const hobbiesButton = document.querySelector('#hobbies-button')
+            const likesDislikesButton = document.querySelector('#likesdislikes-button')
+            const ballGameButton = document.querySelector('#ball-game-button')
+            const parkButton = document.querySelector('#park-button')
+            const parkParagraph = document.querySelector('#park-link')
+
+            awakeAsleepButton.addEventListener('click', function() {
+                if (awakeStatus === true){                
+                alert("zzzzZZZZzzzZZzzz...")
+                mainPic.src = 'https://i.imgur.com/jluEXif.jpg'
+                likesDislikesButton.style.visibility = "hidden"
+                likesDislikesContent.style.visibility = "hidden"
+                hobbiesButton.style.visibility = "hidden"
+                hobbiesContent.style.visibility = "hidden"
+                awakeAsleepParagraph.textContent = "zZZZZzzzzzzzzzZZZzzz..."
+                awakeAsleepButton.style.visibility = "visible"
+                awakeAsleepButton.textContent = "Wake up"
+                introParagraph.textContent = "My name is Emily and this is my homepage.  I'm asleep right now, you'll need to wake me up if you want to know more... "
+                
+                awakeStatus = false
+            } else {
+                    alert('Waking up..')
+                    mainPic.src = 'https://i.imgur.com/5HwXNSE.jpg' 
+                    awakeAsleepParagraph.textContent = "I'm awake, what do you want to know?"
+                    introParagraph.textContent = "My name is Emily and this is my homepage."
+                    hobbiesButton.style.visibility = "visible"
+                    likesDislikesButton.style.visibility = "visible" 
+                    awakeAsleepButton.textContent = "Go back to sleep"
+                    awakeStatus = true
+                    console.log(awakeStatus)                 
+                }
+                
+
+
+                
+            })
+            
+            hobbiesButton.addEventListener('click', function() {
+                alert("Of course I have hobbies, I don't just sleep in bed all day long...")
+                hobbiesContent.style.visibility = "visible"
+               hobbiesButton.style.visibility = "hidden" 
+            })
+
+            likesDislikesButton.addEventListener('click', function() {
+                alert("Make sure you look at the first dislike before you take me for a walk...")
+                likesDislikesContent.style.visibility = "visible"
+               likesDislikesButton.style.visibility = "hidden"
+            })
+
+
+
+            ballGameButton.addEventListener('click', function() {
+                alert("let's play!")
+                mainPic.src = 'https://i.imgur.com/BSCVMT1.jpg'
+                leadStatus = false
+                parkParagraph.textContent = ""
+            })
+
+            parkButton.addEventListener('click', function() {
+                if (leadStatus){
+                    location.href="https://gedlingcountrypark.com/"
+                    return
+                }
+                alert("You forgot my lead, click again to go to the park")
+                mainPic.src = 'https://i.imgur.com/7M1NynQ.png'
+                parkParagraph.textContent = "I've got my lead on, click to go to the park"
+                leadStatus = true
+                }
+            )
+
+            
+            
+
+
+  })
+
+       
+
+
+        </script>
+
+</html>
