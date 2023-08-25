@@ -18,7 +18,6 @@ footer {
     color: steelblue;
     display: flex;
     justify-content: center;
-    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%
@@ -182,3 +181,44 @@ a {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 600px) {
+    img {
+        height: 200px;
+        
+    }
+    .pic {
+        width: 80%;
+    }
+
+    footer {
+        position: fixed;
+        font-size: 10px
+        
+    }
+
+    #likesdislikes-content {
+    
+        padding-left: 0px;
+        padding-right: 0px; 
+        margin-bottom: 80px;
+    }
+
+    #hobbies-content {
+        
+        padding-left: 0px;
+        padding-right: 0px; 
+    }
+
+    .main-content{
+        display: grid;
+        grid-template-columns: 1fr;
+    
+    }
+    #park-button {
+        height: 60px;
+    }
+    #ball-game-button {
+        height: 60px;
+    }
+
+  }
