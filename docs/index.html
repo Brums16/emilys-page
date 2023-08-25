@@ -14,7 +14,7 @@
           
         </header>
         <main>
-            <h1>Emily's Homepage</h1>           
+            <h1 id="h1-title">Emily's Homepage</h1>           
              <div class="introduction">
             <p id="introduction-para">My name is Emily and this is my homepage.  I'm asleep right now, you'll need to wake me up if you want to know more... </p>
                 
@@ -159,7 +159,7 @@
                 awakeAsleepButton.style.visibility = "visible"
                 awakeAsleepButton.textContent = "Wake up"
                 introParagraph.textContent = "My name is Emily and this is my homepage.  I'm asleep right now, you'll need to wake me up if you want to know more... "
-                
+                location.href="#h1-title"
                 awakeStatus = false
             } else {
                     alert('Waking up..')

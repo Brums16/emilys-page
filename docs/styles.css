@@ -185,9 +185,12 @@ a {
     img {
         height: 200px;
         
+        
     }
     .pic {
         width: 80%;
+        position: sticky;
+        top: 0
     }
 
     footer {
