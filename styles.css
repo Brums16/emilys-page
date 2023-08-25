@@ -118,7 +118,7 @@ footer {
 button {
     color: whitesmoke;
     background-color: #333333;
-    border-radius: 10px;
+    border-radius: 10%;
     height: 30px;
     font-weight: bold;
 }
@@ -130,8 +130,8 @@ button:hover {
 
 #ball-game-button {
     background-color: royalblue;
-    border-radius: 50%;
-    height: 50%;
+    border-radius: 10%;
+    height: 30px;
     margin-left: 30px;
     width: 50%
 }
@@ -142,9 +142,9 @@ button:hover {
 
 #park-button {
     background-color: darkgreen;
-    height: 50%;
+    height: 30px;
     width: 50%;
-    border-radius: 50%;
+    border-radius: 10%;
 }
 
 #park-button:hover {
