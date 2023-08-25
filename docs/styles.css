@@ -188,9 +188,10 @@ a {
         
     }
     .pic {
-        width: 80%;
+        width: 100%;
         position: sticky;
-        top: 0
+        top: 0;
+        background-color: whitesmoke;
     }
 
     footer {
