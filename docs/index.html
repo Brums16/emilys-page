@@ -23,7 +23,7 @@
             </div>
             <div class="pic">
                 <div class="pic-grid">
-                <img src="https://i.imgur.com/jluEXif.jpg" id="main-pic">
+                <img src="https://i.imgur.com/jluEXif.jpg" alt = "Emily sleeping" id="main-pic">
                 <button id="awake-asleep">Wake up</button>
                 </div>
   <!--              <button id="go-to-sleep">Go back to sleep</button>  -->
@@ -151,6 +151,7 @@
                 if (awakeStatus === true){                
                 alert("zzzzZZZZzzzZZzzz...")
                 mainPic.src = 'https://i.imgur.com/jluEXif.jpg'
+                mainPic.alt = 'emily is awake!'
                 likesDislikesButton.style.visibility = "hidden"
                 likesDislikesContent.style.visibility = "hidden"
                 hobbiesButton.style.visibility = "hidden"
@@ -195,6 +196,7 @@
             ballGameButton.addEventListener('click', function() {
                 alert("let's play!")
                 mainPic.src = 'https://i.imgur.com/BSCVMT1.jpg'
+                mainPic.alt = 'ready to play with the ball'
                 leadStatus = false
                 parkParagraph.textContent = ""
             })
@@ -206,6 +208,7 @@
                 }
                 alert("You forgot my lead, click again to go to the park")
                 mainPic.src = 'https://i.imgur.com/7M1NynQ.png'
+                mainPic.alt = 'ready to go to the park'
                 parkParagraph.textContent = "I've got my lead on, click to go to the park"
                 leadStatus = true
                 }
